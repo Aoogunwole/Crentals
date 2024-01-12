@@ -112,7 +112,7 @@ const Footer = () => {
       </div>
       <hr class="my-4 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-6" />
       <div class="flex flex-col-reverse justify-between sm:flex-row sm:items-center sm:justify-between">
-      <span class="text-sm text-gray-500 text-center mt-4 sm:mt-0 dark:text-gray-400">© {date} <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
+      <span class="text-sm text-gray-500 text-center mt-4 sm:mt-0 dark:text-gray-400">© {date} <a href="#" class="hover:underline">cRENTALS™</a>. All Rights Reserved.
         </span>
         <ul className="flex justify-between items-center font-font space-x-6">
             <li>Privacy & Policy</li>

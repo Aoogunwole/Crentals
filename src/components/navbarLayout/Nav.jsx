@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { NavLink } from "react-router-dom";
 import { Menu, X } from 'lucide-react';
+import { motion } from "framer-motion"
 
 const NavLinks = () => {
   return (
@@ -38,10 +39,11 @@ const Nav = () => {
 
       {
           isOpen && (
-              <div className="flex flex-col basis-full items-center text-lg text-white font-font pt-16 bg-primary h-screen sticky top-0 z-[20] px-0 py-0 space-y-12 ">
-                  <NavLinks />
+              <motion.div className="flex flex-col basis-full items-center text-lg text-white font-font pt-16 bg-primary h-screen sticky top-0 z-[20] px-0 py-0 space-y-12" initial={{ scale: 0.6 }}
+              animate={{ scale: 1 }} onClick={toggleNavbar} >
+                  <NavLinks/>
                   <NavLink><button type="button" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-lg px-10 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Login</button></NavLink>
-              </div>
+              </motion.div>
           )
       }
     </>
